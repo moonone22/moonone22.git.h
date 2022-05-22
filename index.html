@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="grid.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/tetrix.css.css">
+    <link href="clockSlide.css/clock.css" rel="stylesheet">
+    <link rel="stylesheet" href="weather.css/style.css">
+    <link href="todo.css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />    
+</head>
+<body id="bodyBack">
+    
+    <div id="login_Box">
+        <div class="log_InForm" >
+            <form id="login-form" class="hidden">
+                <div class="LineBox">
+                    <input
+                        class="login"
+                        required
+                        maxlength="15"
+                        type="text"
+                        placeholder="what is your name?">
+                </div>
+                <button class="login_button" class="hidden">Log In</button>
+            </form>
+        </div>
+    </div>
+    <div class="gird_container">
+
+        <!--시계 -->
+        <div class="grid_item">
+            <div class="container">
+                <ul class="slide_contiainer">
+                    <li class="slide">
+                        <div class="DclockBox">
+                            <h1 class="TextClock"></h1>
+                            <h2 class="AMPM"></h2>
+                        </div>
+                    </li>
+                    <!--아날로그 시계-->
+                    <li class="slide">
+                        <div class="clock">
+                            <div class="hand hour" data-hour-hand></div>
+                            <div class="hand minute" data-minute-hand></div>
+                            <div class="hand second" data-second-hand></div>
+                            
+                            <!--div.number.number$*12{$} -->
+                            <div class="number number1">1</div>
+                            <div class="number number2">2</div>
+                            <div class="number number3">3</div>
+                            <div class="number number4">4</div>
+                            <div class="number number5">5</div>
+                            <div class="number number6">6</div>
+                            <div class="number number7">7</div>
+                            <div class="number number8">8</div>
+                            <div class="number number9">9</div>
+                            <div class="number number10">10</div>
+                            <div class="number number11">11</div>
+                            <div class="number number12">12</div>
+                
+                
+                
+                        </div>
+                        
+                        
+                    </li>
+                </ul>
+    
+                <div class="pager">
+                    <span>0</span>  
+                    <span>1</span>
+                </div>
+    
+        </div>
+    
+    
+        </div>
+
+        <!--테트리스 로고-->
+        <div class="grid_item">
+            <div class="IMGBOX">
+                <img src="img/tetris.PNG">
+            </div>
+        </div>
+
+
+        <!--로그인 -->
+        <div class="grid_item">
+            
+            <div class="Logout_BOX">
+                <h1 id="greeting" class="hidden"></h1>
+                <form>
+                    <button id="LOG_OUT" class="hidden">로그아웃</button>
+                </form>
+            </div>
+        
+        </div>
+        
+       
+
+
+
+        <!--todo LIST -->
+        <div class="grid_item">
+            <div class="weather-app">
+                <div class="weatherborder">
+                    
+                    <div>
+                        <h1 id="temp">온도</h1>
+                        <div class="city-time">
+                            <h1 id="name">위치</h1>
+                            <small>
+                                
+                                
+                                <h2 id="today">
+                                    Monday Sep 19
+                                </h2>
+                            </small>
+        
+                        </div>
+                       
+                    </div>
+        
+                    
+                </div>
+                <div id="weather">
+                    <span></span>
+                    <span></span>
+                </div>
+                
+            </div>
+        </div>
+
+
+
+
+        <div class="grid_item"><div class="wrapper">
+            <div class="game-text">
+                게임종료
+                <button>다시시작</button>
+            </div>
+            <div class="startgame">
+                게임시작
+                <button>시작</button>
+            </div>
+            <div class="score">0</div>
+            <div class="playground">
+                <ul></ul>
+            </div>
+        </div>
+    </div>
+
+        <!--날씨-->
+        <div class="grid_item">
+            <div class="TODOBOX">
+                <form id ="todo-form">
+                    <input  type="text" placeholder="Todo List" required >
+                </form>
+            <ul id="todo-list"></ul>
+            </div>
+
+        
+        </div>
+        
+        
+    </div>
+    
+    <script src="js/tetris.js" ></script>
+    <script src="clockSlide.js/clock.js"></script>
+    <script src="clockSlide.js/script.js"></script>\
+    <script src="weather.js/js.js"></script>
+    <script src="todo.js/script.js"></script>
+    <script src="script.js"></script>
+    <script src="back.js"></script>
+
+</body>
+</html>

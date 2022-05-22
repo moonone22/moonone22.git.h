@@ -1,0 +1,35 @@
+body{
+    background-image: url(img/baCK1.png);
+}
+.gird_container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: rgba(0,0,0,.2);
+    grid-auto-rows: minmax(333px,auto);
+    justify-content: center;
+    align-self: center;
+    
+}
+
+.grid_item{
+    
+    position: relative;
+    border: 3px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper{
+   position: relative;
+    width: 337px;
+    height: 624px;
+    background: linear-gradient(200deg, #020d20,#2c2d85);
+    color: white;
+    border: 14px solid #2E84E3;
+    transform: translate(0px, -2px);
+}
+
+.IMGBOX img{
+    width: 220px;
+}

@@ -1,0 +1,33 @@
+.TODOBOX{
+    width: 300px;
+    height: 500px;
+    background-color: #10101e;
+    text-align: center;
+   
+    overflow: auto;
+    color: white;
+    border: 14px solid #2E84E3;
+    border-radius: 50px;
+}
+
+#todo-form > input{
+    text-align: center;
+}
+
+#todo-list button{
+    border: none;
+    background: none;
+   
+}
+#todo-list li {
+    margin-top: 11px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+#todo-list  li h2{
+    font-size: 12px;
+    color: white;
+}
